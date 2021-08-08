@@ -16,7 +16,7 @@ export const Name = styled.h2`
   color: ${bgDarkMode};
   display: inline-block;
   font-family: monospace;
-  font-size: 6rem;
+  font-size: calc(3rem + 3vw);
   padding-right: 1.5rem;
   position: relative;
   text-transform: uppercase;
@@ -40,7 +40,7 @@ export const Lastname = styled.h2`
   color: ${bgDarkMode};
   display: inline-block;
   font-family: monospace;
-  font-size: 6rem;
+  font-size: calc(3rem + 3vw);
   position: relative;
   text-transform: uppercase;
   -webkit-text-stroke: .1rem ${greyDarkMode};

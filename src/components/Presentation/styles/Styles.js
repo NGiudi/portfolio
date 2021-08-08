@@ -18,51 +18,51 @@ export const Background = styled.div`
 `;
 
 export const ContentBox = styled.div`
-  box-sizing: border-box;
   height: 100vh;
   left:0;
-  padding: 20vh 12vw;
+  padding: 15vh 0 0 10vw;
   width: 70%;
   z-index: 1000;
 `;
 
 export const Text = styled.p`
   color: ${whiteDarkMode};
-  font-size: 2.5rem;
+  font-size: calc(1rem + 1vw);
   padding: ${props => props.p || ""};
 `;
 
-export const Name = styled.h2`
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 5rem;
+export const BoxButtons = styled.div`
+  padding-top: 5vw;
+  text-align: center;
 `;
 
-export const BoxButtons = styled.div`
-  padding-top: 6rem;
-  padding-left: 6rem;
+export const BtnOutlined = styled.a`
+  border: 2px solid ${greenDarkMode};
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: ${greenDarkMode};
+  display: inline-block;
+  font-size: calc(.8rem + .5vw);
+  margin-right: 4vw;
+  padding: .8vw 2vw;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const BtnSolid = styled.a`
   background-color: ${greenDarkMode}; 
-  border: 3px solid ${greenDarkMode}; 
+  border: 2px solid ${greenDarkMode}; 
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
   color: ${blackDarkMode};
-  font-size: 1.3rem;
+  display: inline-block;
+  font-size: calc(.8rem + .5vw);
   font-weight: 600;
-  margin: 0 2rem;
-  padding: 0.7rem 2rem;
+  padding: .8vw 2vw;
   text-decoration: none;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
-`;
-
-export const BtnOutlined = styled.a`
-  border: 3px solid ${greenDarkMode}; 
-  color: ${greenDarkMode}; 
-  font-size: 1.3rem;
-  margin: 0 2rem;
-  padding: 0.7rem 2rem;
-  text-decoration: none;
 `;
