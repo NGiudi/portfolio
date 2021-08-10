@@ -1,6 +1,7 @@
 import React from 'react';
 
 // import from local files.
+import SocialMedia from './components/SocialMedia/SocialMedia';
 import Greet from './components/Greet/Greet';
 
 // import styles.
@@ -19,12 +20,14 @@ function Presentation() {
           <Lastname dataText="Giudice">Giudice</Lastname>
         </div>
         
-        <Text p="0 0 0 1rem">soy desarrollador web</Text>
+        <Text p="0 0 0 1rem">y me dedico al desarrollo web</Text>
           
         <BoxButtons>
           <BtnOutlined href="#">Download CV</BtnOutlined>
           <BtnSolid href="#">Portafolio</BtnSolid>
         </BoxButtons>
+
+        <SocialMedia/>
       </ContentBox>
     </>
   );
