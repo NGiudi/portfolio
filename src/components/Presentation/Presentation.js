@@ -21,9 +21,9 @@ function Presentation() {
         </div>
         
         <Text p="0 0 0 1rem">y me dedico al desarrollo web</Text>
-          
+        
         <BoxButtons>
-          <BtnOutlined href="#">Download CV</BtnOutlined>
+          <BtnOutlined target="_blank" href="https://drive.google.com/file/d/1AmcsGGDBZDAnXt34oqXS666FfcGZyGfm/view?usp=sharing">Curriculum Vitae</BtnOutlined>
           <BtnSolid href="#">Portafolio</BtnSolid>
         </BoxButtons>
 

@@ -21,7 +21,7 @@ export const ContentBox = styled.div`
   height: 100vh;
   left:0;
   padding: 15vh 0 0 10vw;
-  width: 70%;
+  width: 100%;
   z-index: 1000;
 `;
 
@@ -32,8 +32,7 @@ export const Text = styled.p`
 `;
 
 export const BoxButtons = styled.div`
-  padding-top: 5vw;
-  text-align: center;
+  padding: 5vh 0 0 8vw;
 `;
 
 export const BtnOutlined = styled.a`
