@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-import { greenDarkMode, whiteDarkMode } from "../../../../constants/colors";
+import { greenDarkMode, whiteDarkMode } from "../../constants/colors";
 
-export const SocialMediaGrup = styled.div`
+export const ButtonsGrup = styled.div`
   display: flex;
   position: fixed;
   bottom: 4vh;
   left: 3vw;
 `;
 
-export const SocialIcon = styled.a`
+export const IconButton = styled.a`
   align-items: center;
   border: 1px solid ${whiteDarkMode};
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
@@ -27,3 +27,4 @@ export const SocialIcon = styled.a`
     color: ${greenDarkMode};
   }
 `;
+

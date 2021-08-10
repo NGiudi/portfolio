@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { greenDarkMode, blackDarkMode } from "../../../../constants/colors";
+import { greenDarkMode, blackDarkMode } from "../../constants/colors";
 
-export const Box = styled.span`
+export const MessageShape = styled.span`
   background-color: ${greenDarkMode};
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 

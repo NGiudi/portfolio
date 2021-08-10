@@ -1,3 +1,3 @@
 librerias usadas
 * React JS
-* typewriter-effect
+* font awensome

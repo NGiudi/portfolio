@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { greenDarkMode, bgDarkMode, greyDarkMode } from "../../../constants/colors";
+import { greenDarkMode, bgDarkMode, greyDarkMode } from "../../constants/colors";
 
 const nameAnimate = keyframes`
   0%, 100% { width: 0; }

@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Box } from './Styles';
+// import styles.
+import { MessageShape } from '../../assets/styles/MessageShape';
 
 function Greet() {
 
-  const getGreet = () => {
+  const handleTextGreet = () => {
     const date = new Date();
     const hours = date.getHours();
 
@@ -17,9 +18,9 @@ function Greet() {
   }
 
   return (
-    <Box>
-      <span>{getGreet()}</span>
-    </Box>
+    <MessageShape>
+      <span>{handleTextGreet()}</span>
+    </MessageShape>
   );
 }
 
