@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-import { greenDarkMode, blackDarkMode } from "../../constants/colors";
+import { green, black } from "../../constants/colors";
 
 export const BtnOutlined = styled.a`
-  border: 2px solid ${greenDarkMode};
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  color: ${greenDarkMode};
+  border: 2px solid ${green};
+  color: ${green};
   display: inline-block;
   font-size: calc(.8rem + .5vw);
   margin-right: 4vw;
@@ -18,10 +17,9 @@ export const BtnOutlined = styled.a`
 `;
 
 export const BtnSolid = styled.a`
-  background-color: ${greenDarkMode}; 
-  border: 2px solid ${greenDarkMode}; 
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
-  color: ${blackDarkMode};
+  background-color: ${green}; 
+  border: 2px solid ${green}; 
+  color: ${black};
   display: inline-block;
   font-size: calc(.8rem + .5vw);
   font-weight: 600;
