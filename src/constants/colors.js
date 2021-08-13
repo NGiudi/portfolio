@@ -1,4 +1,5 @@
-export const bgPresentation = "#ededed";
+export const bgPresentation = "#EDEDED";
+export const lightgrey = "#EDEDED";
 export const green = "#08C56D";
 export const black = "#121212";
 export const grey = "#DDDDDD";

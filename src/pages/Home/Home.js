@@ -8,7 +8,7 @@ import Greet from '../../components/Greet/Greet';
 
 // import styles.
 import { BtnOutlined, BtnSolid } from '../../assets/styles/Buttons';
-import { BoxButtons, Presentation, Section } from './styles';
+import { BgGrey, BoxButtons, Presentation, Section } from './styles';
 import { Text, TextMd, Title } from '../../assets/styles/Text';
 
 function Home() {
@@ -31,21 +31,22 @@ function Home() {
 
       {/* about me - second section */}
       <Section>
-        <Title>Sobre Mi</Title>
-        <Text>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, 
-          making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more 
-          obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
-          discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes 
-          of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-          The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum 
-          used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by 
-          Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</Text>
+        <Title content="Sobre Mi">Sobre Mi</Title>
+        <Text>En el año 2019 empezaba mi trayectoria en el mundo IT. En ese año comence la carrera de ingeniería en sistemas de información en la universidad tecnológica 
+          nacional y de forma autodidacta comenzaba mis estudios para convertirme en desarrollador web. A lo largo del tiempo, he realizado cursos tanto en plataformas 
+          como en instituciones y he leído documentaciones para adquirir nuevos conocimientos.
+        </Text>
+        <Text>A mediados de 2021 he realizado una capacitación profesional de javascript fullstack en Alkemy, donde he participado en un proyecto para una ONG, junto a 9 
+          compañeros y un mentor. A lo largo del proyecto hemos utilizado SCRUM como metodología de trabajo y React y Node.js como tecnologías principales.</Text>
       </Section>
 
       {/* projects - third section */}
-      <Section>
-        <Title>Projectos</Title>
-      </Section>
+      <BgGrey>
+        <Section>
+          <Title content={"Últimos Proyectos"}>Últimos Proyectos</Title>
+        </Section>
+      </BgGrey>
+      
     </>
   );
 }

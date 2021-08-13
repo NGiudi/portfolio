@@ -12,7 +12,8 @@ export const TextMd = styled.p`
 
 export const Text = styled.p`
   font-size: calc(1rem + .3vw);
-  line-height: 2; 
+  line-height: 2;
+  padding-bottom: 1vw;
 `;
 
 export const Title = styled.h2`
@@ -20,5 +21,14 @@ export const Title = styled.h2`
   font-family: monospace;
   font-size: 4rem;
   padding-bottom: 5vh;
+  position: relative;
   text-align: center;
+
+  &:after {
+    color: black;
+    content: ${props => `"${props.content}"`};
+    left: -2px;
+    position: absolute;
+    top: -2px;
+  }
 `;

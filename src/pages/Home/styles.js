@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { bgPresentation } from "../../constants/colors";
+import { bgPresentation, lightgrey } from "../../constants/colors";
 
 export const Presentation = styled.section`
   background-color: ${bgPresentation};
@@ -21,6 +21,11 @@ export const Section = styled.section`
   flex-direction: column;
   min-height: 100vh;
   max-width: 1200px;
-  margin: 15vh auto;
+  margin: auto;
+  padding: 15vh 0;
   width:90%;
+`;
+
+export const BgGrey = styled.div`
+  background: ${lightgrey}; 
 `;
