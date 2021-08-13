@@ -5,11 +5,10 @@ import React from 'react';
 import SocialMediaBar from '../../components/SocialMediaBar/SocialMediaBar';
 import AnimatedName from '../../components/AnimatedName/AnimatedName';
 import Greet from '../../components/Greet/Greet';
-import Card from '../../components/Card/Card';
 
 // import styles.
 import { BtnOutlined, BtnSolid } from '../../assets/styles/Buttons';
-import { BgBlack, BoxButtons, Center, Presentation, Section } from './styles';
+import { BgSection, BoxButtons, Center, Presentation, Section } from './styles';
 import { Text, TextMd, Title } from '../../assets/styles/Text';
 import { Icon } from '../../assets/styles/Icons';
 import Projects from './sections/projects/Projects';
@@ -44,7 +43,7 @@ function Home() {
       </Section>
 
       {/*Coding Language*/}
-      <BgBlack>
+      <BgSection>
         <Section py="5rem">         
           <Center>  
             <Icon px="5rem" size="6rem" color="#F4D03F" className="fab fa-js"></Icon>
@@ -52,7 +51,7 @@ function Home() {
             <Icon px="5rem" size="6rem" color="#229954" className="fab fa-node"></Icon>
           </Center>
         </Section>
-      </BgBlack>
+      </BgSection>
       
       {/* projects - third section */}
       <Projects/>

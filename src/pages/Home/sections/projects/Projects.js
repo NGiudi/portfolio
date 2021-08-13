@@ -11,7 +11,7 @@ import { Box, Center, Gallery } from './styles';
 function Projects() {
   return (
     <Box>
-      <Title>Últimos Proyectos</Title>
+      <Title>Proyectos</Title>
         
       <Gallery>
         <Card/>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Badge, Box, Description, Footer, FooterText, Img, Link, Title } from './styles';
+import { Badge, Box, Description, Footer, FooterBtn, FooterText, Img, Title } from './styles';
 
 function Card() {
   return (
@@ -10,20 +10,20 @@ function Card() {
       {/*categoria*/}
       <Badge>Challenge</Badge>
       {/*titulo*/}
-      <Title>Taller Mecánico</Title>
+      <Title>Neque porro quisquam est qui dolorem ipsum quia dolor</Title>
       {/*descripcion*/}
-      <Description>esta es la mejor pagina que he creado en la vida y la mejor que van a ver</Description>
+      <Description>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</Description>
 
       <Footer>
-        <Link href="#">
+        <FooterBtn href="#">
           <i className="fab fa-github"></i>
           <FooterText>Código</FooterText>
-        </Link>
+        </FooterBtn>
 
-        <Link href="#">
+        <FooterBtn href="#">
           <i className="fas fa-link"></i>
           <FooterText>Página Web</FooterText>
-        </Link>
+        </FooterBtn>
       </Footer>
     </Box>
   );

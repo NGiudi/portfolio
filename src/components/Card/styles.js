@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import { bgCard, green, lightgrey } from "../../constants/colors";
+import { badge, cardTitle, cardBorder, cardBtnHover } from "../../constants/colors";
 
 export const Box = styled.div`
-  border-left: 2px solid ${lightgrey};
+  border-left: 2px solid ${cardBorder};
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 20%);
   overflow: hidden;
@@ -16,21 +16,27 @@ export const Img = styled.img`
 `;
 
 export const Badge = styled.span`
-  background-color: ${green};
+  background-color: ${badge};
   border-radius: 1rem;
   display: inline-block;
+  font-size: .8rem;
   margin: .5rem;
   padding: .2rem .6rem;
 `;
 
 export const Title = styled.h4`
+  color: ${cardTitle};
   font-family: monospace; 
   font-size: calc(1.1rem + .2vw);
   margin: 0.5rem;
 `;
 
 export const Description = styled.p`
+  display: -webkit-box;
   margin: 0 1rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 3;
 `;
 
 export const Footer = styled.div`
@@ -42,8 +48,18 @@ export const FooterText = styled.span`
   padding-left: 1rem;
 `;
 
-export const Link = styled.a`
+export const FooterBtn = styled.a`
+  border-top: 1px solid ${cardBorder};
   color: black;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: .8rem 0;
   text-decoration: none;
+  width: 50%;
+  
+  &:hover{
+    background-color: ${cardBtnHover};
+    font-weight: bold;
+  }
 `;

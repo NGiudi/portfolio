@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { bgBlack, bgPresentation, lightgrey } from "../../constants/colors";
+import { bgSection, bgPresentation, lightgrey } from "../../constants/colors";
 
 export const Presentation = styled.section`
   background-color: ${bgPresentation};
@@ -26,8 +26,8 @@ export const BgGrey = styled.div`
   background: ${lightgrey}; 
 `;
 
-export const BgBlack = styled.div`
-  background: ${bgBlack};
+export const BgSection = styled.div`
+  background: ${bgSection};
 `;
 
 export const Center = styled.div`

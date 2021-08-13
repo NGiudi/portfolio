@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { black } from "../../constants/colors";
+import { sectionTitle } from "../../constants/colors";
 
 export const TextMd = styled.p`
   font-size: calc(1rem + 1vw);
@@ -17,9 +17,9 @@ export const Text = styled.p`
 `;
 
 export const Title = styled.h3`
-  color: ${props => props.color || black};
+  color: ${props => props.color || sectionTitle};
   font-family: monospace;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 6rem;
   position: relative;
   text-align: center;
