@@ -5,11 +5,13 @@ import React from 'react';
 import SocialMediaBar from '../../components/SocialMediaBar/SocialMediaBar';
 import AnimatedName from '../../components/AnimatedName/AnimatedName';
 import Greet from '../../components/Greet/Greet';
+import Card from '../../components/Card/Card';
 
 // import styles.
 import { BtnOutlined, BtnSolid } from '../../assets/styles/Buttons';
-import { BgGrey, BoxButtons, Presentation, Section } from './styles';
+import { BoxButtons, Presentation, Section } from './styles';
 import { Text, TextMd, Title } from '../../assets/styles/Text';
+import { Gallery } from '../../assets/styles/Gallery';
 
 function Home() {
   return (
@@ -41,12 +43,18 @@ function Home() {
       </Section>
 
       {/* projects - third section */}
-      <BgGrey>
-        <Section>
-          <Title content={"Últimos Proyectos"}>Últimos Proyectos</Title>
-        </Section>
-      </BgGrey>
-      
+      <Section>
+        <Title content={"Últimos Proyectos"}>Últimos Proyectos</Title>
+        
+        <Gallery pb="3rem">
+          <Card/>
+          <Card/>
+          <Card/>
+        </Gallery>
+
+        <BtnSolid>Ver más</BtnSolid>
+
+      </Section>
     </>
   );
 }

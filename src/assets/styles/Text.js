@@ -16,7 +16,7 @@ export const Text = styled.p`
   padding-bottom: 1vw;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   color: ${green};
   font-family: monospace;
   font-size: 4rem;
