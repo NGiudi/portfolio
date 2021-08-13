@@ -9,9 +9,10 @@ import Card from '../../components/Card/Card';
 
 // import styles.
 import { BtnOutlined, BtnSolid } from '../../assets/styles/Buttons';
-import { BoxButtons, Presentation, Section } from './styles';
+import { BgBlack, BoxButtons, Center, Presentation, Section } from './styles';
 import { Text, TextMd, Title } from '../../assets/styles/Text';
-import { Gallery } from '../../assets/styles/Gallery';
+import { Icon } from '../../assets/styles/Icons';
+import Projects from './sections/projects/Projects';
 
 function Home() {
   return (
@@ -32,8 +33,8 @@ function Home() {
       </Presentation>
 
       {/* about me - second section */}
-      <Section>
-        <Title content="Sobre Mi">Sobre Mi</Title>
+      <Section py="10rem">
+        <Title>Sobre Mi</Title>
         <Text>En el año 2019 empezaba mi trayectoria en el mundo IT. En ese año comence la carrera de ingeniería en sistemas de información en la universidad tecnológica 
           nacional y de forma autodidacta comenzaba mis estudios para convertirme en desarrollador web. A lo largo del tiempo, he realizado cursos tanto en plataformas 
           como en instituciones y he leído documentaciones para adquirir nuevos conocimientos.
@@ -42,19 +43,19 @@ function Home() {
           compañeros y un mentor. A lo largo del proyecto hemos utilizado SCRUM como metodología de trabajo y React y Node.js como tecnologías principales.</Text>
       </Section>
 
+      {/*Coding Language*/}
+      <BgBlack>
+        <Section py="5rem">         
+          <Center>  
+            <Icon px="5rem" size="6rem" color="#F4D03F" className="fab fa-js"></Icon>
+            <Icon px="5rem" size="6rem" color="#3498DB" className="fab fa-react"></Icon>
+            <Icon px="5rem" size="6rem" color="#229954" className="fab fa-node"></Icon>
+          </Center>
+        </Section>
+      </BgBlack>
+      
       {/* projects - third section */}
-      <Section>
-        <Title content={"Últimos Proyectos"}>Últimos Proyectos</Title>
-        
-        <Gallery pb="3rem">
-          <Card/>
-          <Card/>
-          <Card/>
-        </Gallery>
-
-        <BtnSolid>Ver más</BtnSolid>
-
-      </Section>
+      <Projects/>
     </>
   );
 }

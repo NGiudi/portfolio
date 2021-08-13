@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { bgPresentation, lightgrey } from "../../constants/colors";
+import { bgBlack, bgPresentation, lightgrey } from "../../constants/colors";
 
 export const Presentation = styled.section`
   background-color: ${bgPresentation};
@@ -16,16 +16,20 @@ export const BoxButtons = styled.div`
 `;
 
 export const Section = styled.section`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   max-width: 1200px;
   margin: auto;
-  padding: 15vh 0;
+  padding: ${props => props.py || "0"} ${props => props.px || "0"};
   width:90%;
 `;
 
 export const BgGrey = styled.div`
   background: ${lightgrey}; 
+`;
+
+export const BgBlack = styled.div`
+  background: ${bgBlack};
+`;
+
+export const Center = styled.div`
+  text-align:center;
 `;

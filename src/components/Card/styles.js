@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-import { green } from "../../constants/colors";
+import { bgCard, green, lightgrey } from "../../constants/colors";
 
 export const Box = styled.div`
+  border-left: 2px solid ${lightgrey};
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 20%);
   overflow: hidden;

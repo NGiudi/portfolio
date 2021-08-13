@@ -6,9 +6,9 @@ export const BtnOutlined = styled.a`
   border: 2px solid ${green};
   color: ${green};
   display: inline-block;
-  font-size: calc(.8rem + .5vw);
+  font-size: calc(.8rem + .4vw);
   margin-right: 4vw;
-  padding: .8vw 2vw;
+  padding: .5rem 1rem;
   text-decoration: none;
 
   &:hover {
