@@ -10,7 +10,7 @@ export const cardBtnHover = "#E6EFE6";
 export const cardBorder = "#E4E4E4";
 export const cardTitle = "#345"; 
 export const badge = "#BBE2B7";
-
+export const cardStatus = "#464646";
 
 
 export const lightgrey = "#EDEDED";

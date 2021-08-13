@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { badge, cardTitle, cardBorder, cardBtnHover } from "../../constants/colors";
+import { badge, cardBorder, cardBtnHover, cardStatus, cardTitle } from "../../constants/colors";
 
 export const Box = styled.div`
   border-left: 2px solid ${cardBorder};
@@ -27,8 +27,9 @@ export const Badge = styled.span`
 export const Title = styled.h4`
   color: ${cardTitle};
   font-family: monospace; 
-  font-size: calc(1.1rem + .2vw);
+  font-size: 1.4rem;
   margin: 0.5rem;
+  min-height: 54px;
 `;
 
 export const Description = styled.p`
@@ -37,6 +38,13 @@ export const Description = styled.p`
   overflow: hidden;
   -webkit-box-orient: vertical;  
   -webkit-line-clamp: 3;
+`;
+
+export const Status = styled.span`
+  color: ${cardStatus};
+  display: block;
+  font-size: .9rem;
+  margin: .7rem 0 0 1.2rem;
 `;
 
 export const Footer = styled.div`
@@ -58,7 +66,7 @@ export const FooterBtn = styled.a`
   text-decoration: none;
   width: 50%;
   
-  &:hover{
+  &:hover {
     background-color: ${cardBtnHover};
     font-weight: bold;
   }
