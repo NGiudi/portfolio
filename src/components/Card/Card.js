@@ -5,8 +5,6 @@ import { Badge, Box, Description, Img, Status, Title } from './styles';
 import { Footer, FooterBtn, FooterText } from './styles';
 
 function Card({ data }) {
-  console.log(data);
-
   return (
     <Box>
       <Img src={data.imgUrl} alt={data.Alt}/>

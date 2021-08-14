@@ -8,10 +8,10 @@ import Greet from '../../components/Greet/Greet';
 
 // import styles.
 import { BtnOutlined, BtnSolid } from '../../assets/styles/Buttons';
-import { BgSection, BoxButtons, Center, Presentation, Section } from './styles';
+import { BoxButtons, Presentation, Section } from './styles';
 import { Text, TextMd, Title } from '../../assets/styles/Text';
-import { Icon } from '../../assets/styles/Icons';
 import Projects from './sections/projects/Projects';
+import Tecnologies from './sections/tecnologies/Tecnologies';
 
 function Home() {
   return (
@@ -42,19 +42,13 @@ function Home() {
           compañeros y un mentor. A lo largo del proyecto hemos utilizado SCRUM como metodología de trabajo y React y Node.js como tecnologías principales.</Text>
       </Section>
 
-      {/*Coding Language*/}
-      <BgSection>
-        <Section py="5rem">         
-          <Center>  
-            <Icon px="5rem" size="6rem" color="#F4D03F" className="fab fa-js"></Icon>
-            <Icon px="5rem" size="6rem" color="#3498DB" className="fab fa-react"></Icon>
-            <Icon px="5rem" size="6rem" color="#229954" className="fab fa-node"></Icon>
-          </Center>
-        </Section>
-      </BgSection>
       
+
       {/* projects - third section */}
       <Projects/>
+
+      {/*Coding Language*/}
+      <Tecnologies/>
     </>
   );
 }

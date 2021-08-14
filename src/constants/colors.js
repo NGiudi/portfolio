@@ -1,6 +1,7 @@
 
 /* Home Page */
 export const bgPresentation = "#EDEDED";
+export const bgTegnologies = "#363636";
 export const bgSection = "#363636";
 export const sectionTitle = "#345";
 
@@ -18,6 +19,3 @@ export const green = "#75AD6F";
 export const black = "#121212";
 export const white = "#FAFAFA";
 export const grey = "#DDDDDD";
-
-export const bgDarkMode = "#1B1D2C";
-export const whiteDarkMode = "#FAFAFA";
