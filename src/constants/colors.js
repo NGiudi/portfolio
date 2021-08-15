@@ -1,17 +1,21 @@
 
 /* Home Page */
 export const bgPresentation = "#EDEDED";
-export const bgTegnologies = "#363636";
-export const bgSection = "#363636";
-export const sectionTitle = "#345";
+export const TECNOLOGIES_BG_COLOR = "#363636";
+export const SECTION_BG_COLOR = "#363636";
+export const SECTION_TITLE_COLOR = "#345";
 
 
 /* Card */
-export const cardBtnHover = "#E6EFE6"; 
-export const cardBorder = "#E4E4E4";
-export const cardTitle = "#345"; 
-export const badge = "#BBE2B7";
-export const cardStatus = "#464646";
+export const BTN_CARD_HOVER_COLOR = "#E6EFE6"; 
+export const BORDER_CARD_COLOR = "#E4E4E4";
+export const TITLE_CARD_COLOR = "#345"; 
+export const BADGE_CARD_BG_COLOR = "#BBE2B7";
+export const STATUS_TEXT_CARD_COLOR = "#464646";
+
+/* About Us*/
+export const ABOUT_US_RECTANGULAR_COLOR = "#75AD6F";
+
 
 
 export const lightgrey = "#EDEDED";

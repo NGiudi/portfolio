@@ -8,10 +8,11 @@ import Greet from '../../components/Greet/Greet';
 
 // import styles.
 import { BtnOutlined, BtnSolid } from '../../assets/styles/Buttons';
-import { BoxButtons, Presentation, Section } from './styles';
-import { Text, TextMd, Title } from '../../assets/styles/Text';
+import { BoxButtons, Presentation } from './styles';
+import { TextMd } from '../../assets/styles/Text';
 import Projects from './sections/projects/Projects';
 import Tecnologies from './sections/tecnologies/Tecnologies';
+import AboutMe from './sections/aboutMe/AboutMe';
 
 function Home() {
   return (
@@ -32,17 +33,7 @@ function Home() {
       </Presentation>
 
       {/* about me - second section */}
-      <Section py="10rem">
-        <Title>Sobre Mi</Title>
-        <Text>En el año 2019 empezaba mi trayectoria en el mundo IT. En ese año comence la carrera de ingeniería en sistemas de información en la universidad tecnológica 
-          nacional y de forma autodidacta comenzaba mis estudios para convertirme en desarrollador web. A lo largo del tiempo, he realizado cursos tanto en plataformas 
-          como en instituciones y he leído documentaciones para adquirir nuevos conocimientos.
-        </Text>
-        <Text>A mediados de 2021 he realizado una capacitación profesional de javascript fullstack en Alkemy, donde he participado en un proyecto para una ONG, junto a 9 
-          compañeros y un mentor. A lo largo del proyecto hemos utilizado SCRUM como metodología de trabajo y React y Node.js como tecnologías principales.</Text>
-      </Section>
-
-      
+      <AboutMe/>      
 
       {/* projects - third section */}
       <Projects/>

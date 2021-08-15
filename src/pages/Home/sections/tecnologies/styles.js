@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import { bgTegnologies } from '../../../../constants/colors';
+import { TECNOLOGIES_BG_COLOR } from '../../../../constants/colors';
 
 export const Box = styled.section`
-  background-color: ${bgTegnologies};
+  background-color: ${TECNOLOGIES_BG_COLOR};
   padding: 5rem 0;
   width:100%;
 `;

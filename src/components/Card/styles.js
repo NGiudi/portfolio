@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import { badge, cardBorder, cardBtnHover, cardStatus, cardTitle } from "../../constants/colors";
+import { BADGE_CARD_BG_COLOR, BORDER_CARD_COLOR, BTN_CARD_HOVER_COLOR, STATUS_TEXT_CARD_COLOR, TITLE_CARD_COLOR } from "../../constants/colors";
 
 export const Box = styled.div`
-  border-left: 2px solid ${cardBorder};
+  border-left: 2px solid ${BORDER_CARD_COLOR};
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 20%);
   overflow: hidden;
@@ -16,7 +16,7 @@ export const Img = styled.img`
 `;
 
 export const Badge = styled.span`
-  background-color: ${badge};
+  background-color: ${BADGE_CARD_BG_COLOR};
   border-radius: 1rem;
   display: inline-block;
   font-size: .8rem;
@@ -25,7 +25,7 @@ export const Badge = styled.span`
 `;
 
 export const Title = styled.h4`
-  color: ${cardTitle};
+  color: ${TITLE_CARD_COLOR};
   font-family: monospace; 
   font-size: 1.4rem;
   margin: 0.5rem;
@@ -41,7 +41,7 @@ export const Description = styled.p`
 `;
 
 export const Status = styled.span`
-  color: ${cardStatus};
+  color: ${STATUS_TEXT_CARD_COLOR};
   display: block;
   font-size: .9rem;
   margin: .7rem 0 0 1.2rem;
@@ -57,7 +57,7 @@ export const FooterText = styled.span`
 `;
 
 export const FooterBtn = styled.a`
-  border-top: 1px solid ${cardBorder};
+  border-top: 1px solid ${BORDER_CARD_COLOR};
   color: black;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@ export const FooterBtn = styled.a`
   width: 50%;
   
   &:hover {
-    background-color: ${cardBtnHover};
+    background-color: ${BTN_CARD_HOVER_COLOR};
     font-weight: bold;
   }
 `;

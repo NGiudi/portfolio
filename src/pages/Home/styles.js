@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { bgSection, bgPresentation, lightgrey } from "../../constants/colors";
+import { SECTION_BG_COLOR, bgPresentation, lightgrey } from "../../constants/colors";
 
 export const Presentation = styled.section`
   background-color: ${bgPresentation};
@@ -15,19 +15,12 @@ export const BoxButtons = styled.div`
   padding: 5vh 0 0 8vw;
 `;
 
-export const Section = styled.section`
-  max-width: 1200px;
-  margin: auto;
-  padding: ${props => props.py || "0"} ${props => props.px || "0"};
-  width:90%;
-`;
-
 export const BgGrey = styled.div`
   background: ${lightgrey}; 
 `;
 
 export const BgSection = styled.div`
-  background: ${bgSection};
+  background: ${SECTION_BG_COLOR};
 `;
 
 export const Center = styled.div`
