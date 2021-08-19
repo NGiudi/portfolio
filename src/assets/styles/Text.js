@@ -2,14 +2,6 @@ import styled from "styled-components";
 
 import { SECTION_TITLE_COLOR } from "../../constants/colors";
 
-export const TextMd = styled.p`
-  font-size: calc(1rem + 1vw);
-  padding-bottom: ${props => props.pb || "0"};
-  padding-left: ${props => props.pl || "0"};
-  padding-right: ${props => props.pr || "0"};
-  padding-top: ${props => props.pt || "0"};
-`;
-
 export const Text = styled.p`
   font-size: calc(.8rem + .3vw);
   line-height: 2;

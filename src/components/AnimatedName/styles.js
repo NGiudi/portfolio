@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { bgPresentation, green, grey } from "../../constants/colors";
+import { PRESENTATION_BG_COLOR, NAME_BG_COLOR, BORDER_NAME_COLOR } from "../../constants/colors";
 
 const nameAnimate = keyframes`
   0%, 100% { width: 0; }
@@ -13,18 +13,18 @@ const lastNameAnimate = keyframes`
 `;
 
 export const Name = styled.h2`
-  color: ${bgPresentation};
+  color: ${PRESENTATION_BG_COLOR};
   display: inline-block;
   font-family: monospace;
   font-size: calc(3rem + 3vw);
   padding-right: 1.5rem;
   position: relative;
   text-transform: uppercase;
-  -webkit-text-stroke: .1rem ${grey};
+  -webkit-text-stroke: .1rem ${BORDER_NAME_COLOR};
   
   &:before {
     animation: ${nameAnimate} 6s linear infinite;
-    color: ${green};
+    color: ${NAME_BG_COLOR};
     content:  ${props => `"${props.dataText}"` || ""};
     height: 100%;
     left: 0;
@@ -32,22 +32,22 @@ export const Name = styled.h2`
     position: absolute;
     top: 0;
     width: 0;    
-    -webkit-text-stroke: 0vw ${grey};
+    -webkit-text-stroke: 0vw ${BORDER_NAME_COLOR};
   }
 `;
 
 export const Lastname = styled.h2`
-  color: ${bgPresentation};
+  color: ${PRESENTATION_BG_COLOR};
   display: inline-block;
   font-family: monospace;
   font-size: calc(3rem + 3vw);
   position: relative;
   text-transform: uppercase;
-  -webkit-text-stroke: .1rem ${grey};
+  -webkit-text-stroke: .1rem ${BORDER_NAME_COLOR};
   
   &:before {
     animation: ${lastNameAnimate} 6s linear infinite;
-    color: ${green};
+    color: ${NAME_BG_COLOR};
     content:  ${props => `"${props.dataText}"` || ""};
     height: 100%;
     left: 0;
@@ -55,6 +55,6 @@ export const Lastname = styled.h2`
     position: absolute;
     top: 0;
     width: 0; 
-    -webkit-text-stroke: 0vw ${grey};
+    -webkit-text-stroke: 0vw ${BORDER_NAME_COLOR};
   }
 `;

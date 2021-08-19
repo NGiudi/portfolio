@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import styles.
-import { MessageShape } from '../../assets/styles/MessageShape';
+import { MessageShape } from './styles';
 
 function Greet() {
 
