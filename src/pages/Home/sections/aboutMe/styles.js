@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ABOUT_US_RECTANGULAR_COLOR } from "../../../../constants/colors";
 
 export const Box = styled.section`
-  margin: auto;
+  margin: 1rem auto;
   width:100%;
 `;
 

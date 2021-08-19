@@ -5,7 +5,7 @@ import { TECNOLOGIES_BG_COLOR } from '../../../../constants/colors';
 export const Box = styled.section`
   background-color: ${TECNOLOGIES_BG_COLOR};
   padding: 5rem 0;
-  width:100%;
+  width: 100%;
 `;
 
 export const Slide = styled.div`

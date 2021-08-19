@@ -22,5 +22,14 @@ export const NAME_BG_COLOR = "#75AD6F";
 /* GREET */
 export const BOX_GREET_BG_COLOR = "#75AD6F";
 
+/* WORKS */
+export const WORKS_TITLE_COLOR = "#FAFAFA";
+export const WORKS_BG_COLOR = "#363636";
+export const WORKS_COLOR = "#DADADA";
+export const WORKS_ICON = "#3498DB";
+
+
+
+
 export const green = "#75AD6F";
 export const black = "#121212";
