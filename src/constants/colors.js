@@ -14,6 +14,7 @@ export const BORDER_CARD_COLOR = "#E4E4E4";
 export const TITLE_CARD_COLOR = "#345"; 
 export const BADGE_CARD_BG_COLOR = "#BBE2B7";
 export const STATUS_TEXT_CARD_COLOR = "#464646";
+export const BTN_DISABLED_COLOR = "#777777";
 
 /* Animated Name */
 export const BORDER_NAME_COLOR = "#DDDDDD"; 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { BADGE_CARD_BG_COLOR, BORDER_CARD_COLOR, BTN_CARD_HOVER_COLOR, STATUS_TEXT_CARD_COLOR, TITLE_CARD_COLOR } from "../../constants/colors";
+import { BADGE_CARD_BG_COLOR, BORDER_CARD_COLOR, BTN_CARD_HOVER_COLOR, BTN_DISABLED_COLOR, STATUS_TEXT_CARD_COLOR, TITLE_CARD_COLOR } from "../../constants/colors";
 
 export const Box = styled.div`
   border-left: 2px solid ${BORDER_CARD_COLOR};
@@ -70,4 +70,14 @@ export const FooterBtn = styled.a`
     background-color: ${BTN_CARD_HOVER_COLOR};
     font-weight: bold;
   }
+`;
+
+export const FooterBtnDisabled = styled.div`
+  border-top: 1px solid ${BORDER_CARD_COLOR};
+  color: ${BTN_DISABLED_COLOR};
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: .8rem 0;
+  width: 50%;
 `;

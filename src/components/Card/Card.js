@@ -2,7 +2,7 @@ import React from 'react';
 
 // import styles.
 import { Badge, Box, Description, Img, Status, Title } from './styles';
-import { Footer, FooterBtn, FooterText } from './styles';
+import { Footer, FooterBtn, FooterBtnDisabled, FooterText } from './styles';
 
 function Card({ data }) {
   return (
@@ -18,11 +18,21 @@ function Card({ data }) {
           <i className="fab fa-github"></i>
           <FooterText>Código</FooterText>
         </FooterBtn>
-
-        <FooterBtn target="_blank" href={data.appLink}>
-          <i className="fas fa-link"></i>
-          <FooterText>Página Web</FooterText>
-        </FooterBtn>
+        
+        {
+          data.appLink ? (
+            <FooterBtn target="_blank" href={data.appLink}>
+              <i className="fas fa-link"></i>
+              <FooterText>Página Web</FooterText>
+            </FooterBtn>
+          ) : (
+            <FooterBtnDisabled>
+              <i className="fas fa-link"></i>
+              <FooterText>Página Web</FooterText>
+            </FooterBtnDisabled>
+          )
+        }
+        
       </Footer>
     </Box>
   );

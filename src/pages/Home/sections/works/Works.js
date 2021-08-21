@@ -1,8 +1,10 @@
 import React from 'react';
 
+// import styles.
 import { Title, Text } from '../../../../assets/styles/Text';
 import { Box, Grid, Icon } from './styles';
 
+// import contacts.
 import { WORKS_TITLE_COLOR } from '../../../../constants/colors';
 
 function Skills() {
@@ -28,7 +30,7 @@ function Skills() {
         </div>
       </Grid>
     </Box>
-  )
+  );
 }
 
 export default Skills;
