@@ -6,12 +6,12 @@ export const Box = styled.section`
   background-color: ${PRESENTATION_BG_COLOR};
   font-size: calc(1rem + 1vw);
   height: 100vh;
+  min-width: 100%;
   position: relative;
-  width: 100%;
 `;
 
 export const Content = styled.div`
   left: 10vw;
   position: absolute;
-  top: calc( 10rem + 2vw);
+  top: 10vw;
 `;
