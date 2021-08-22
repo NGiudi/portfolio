@@ -34,6 +34,7 @@ export const Title = styled.h4`
 
 export const Description = styled.p`
   display: -webkit-box;
+  min-height: 66px;
   margin: 0 1rem;
   overflow: hidden;
   -webkit-box-orient: vertical;  
