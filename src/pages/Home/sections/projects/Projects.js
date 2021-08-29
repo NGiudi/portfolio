@@ -26,7 +26,7 @@ function Projects() {
       </Gallery>
       
       <Center>
-        <Link to="projects">
+        <Link to="/portfolio/projects">
           <BtnOutlined>Ver Portafolio</BtnOutlined>
         </Link>
       </Center>
